@@ -82,7 +82,7 @@ export default function ProductPage() {
 
           <div className="flex w-full justify-between md:flex-col">
             <div className="flex items-center gap-5">
-              <div className="text-3xl text-red-500 font-bold">${product.price}</div>
+              <div className="text-3xl text-red-500 font-bold">S/{product.price}</div>
             </div>
 
           </div>
