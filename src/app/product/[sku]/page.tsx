@@ -24,6 +24,7 @@ export default function ProductPage() {
       setIsLoading(false);
     };
     fetchProduct();
+    // eslint-disable-next-line
   }, [sku]);
 
 

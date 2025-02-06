@@ -1,6 +1,4 @@
-interface SearchIconProps extends React.SVGProps<SVGSVGElement> {}
-
-export const SearchIcon = (props: SearchIconProps) => {
+export const SearchIcon = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
       aria-hidden="true"
