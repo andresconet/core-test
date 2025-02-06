@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.peer[data-filled="true"] ~ .peer-data-\[filled\=true\]\:opacity-70 {
+  opacity: 0 !important;
+}
