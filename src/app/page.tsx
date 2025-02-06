@@ -49,6 +49,7 @@ export default function App() {
         setError("Producto no encontrado"); 
       }
     } catch (error) {
+      console.log('err', error)
       setError("Hubo un error - Intentalo más tarde"); 
     } finally {
       setLoading(false);

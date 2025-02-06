@@ -1,4 +1,8 @@
-export const SearchIcon = (props: any) => {
+
+interface SearchIconProps {
+  className?: string;
+}
+export const SearchIcon = ({ className, ...props }: SearchIconProps) => {
     return (
       <svg
         aria-hidden="true"

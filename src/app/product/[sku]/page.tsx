@@ -17,16 +17,16 @@ export default function ProductPage() {
   const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-
+    const fetchProduct = async () => {
+      const response = await fetch(`/api/products?query=${sku}`);
+      const data = await response.json();
+      setProduct(data[0]);
+      setIsLoading(false);
+    };
     fetchProduct();
   }, [sku]);
 
-  const fetchProduct = async () => {
-    const response = await fetch(`/api/products?query=${sku}`);
-    const data = await response.json();
-    setProduct(data[0]);
-    setIsLoading(false);
-  };
+
 
   const handleGoBack = () => {
     window.history.back()
